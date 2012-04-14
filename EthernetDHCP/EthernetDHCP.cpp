@@ -25,12 +25,12 @@
 #include <stdlib.h>
 
 extern "C" {
-   #include "wiring.h"
    #include <utility/EthernetUtil.h>
 }
 
 #include <utility/EthernetCompat.h>
 #include "EthernetDHCP.h"
+#include "Arduino.h"
 
 #define     DEFAULT_HOST_NAME ("Arduino")
 #define     MAX_HOST_NAME_LEN (255)

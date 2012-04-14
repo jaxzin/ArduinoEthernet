@@ -27,7 +27,7 @@
 #include <utility/socket.h>
 #include <utility/w5100.h>
 extern "C" {
-   #include "wiring.h"
+   #include "Arduino.h"
 }
 
 #define TXBUF_BASE      0x4000

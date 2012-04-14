@@ -25,12 +25,12 @@
 #include <stdlib.h>
 
 extern "C" {
-   #include "wiring.h"
    #include <utility/EthernetUtil.h>
 }
 
 #include <utility/EthernetCompat.h>
 #include "EthernetBonjour.h"
+#include "Arduino.h"
 
 #define  MDNS_DEFAULT_NAME       "arduino"
 #define  MDNS_TLD                ".local"

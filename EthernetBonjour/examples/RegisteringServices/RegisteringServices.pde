@@ -34,7 +34,7 @@ byte ip[] = { 192, 168, 0, 154 };
 // NOTE: Alternatively, you can use the EthernetDHCP library to configure your
 //       Ethernet shield.
 
-Server server(80);
+EthernetServer server(80);
 
 void setup()
 {
@@ -77,7 +77,7 @@ void loop()
   // library. The only difference here is that this web server gets announced
   // over Bonjour, but this happens in setup(). This just displays something
   // in the browser when you connect.
-  Client client = server.available();
+  EthernetClient client = server.available();
   if (client) {
     // an http request ends with a blank line
     boolean current_line_is_blank = true;
